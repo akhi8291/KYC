@@ -15,7 +15,6 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 @app.route('/upload')
 def upload_file():
    return render_template('upload.html')
-	
 @app.route('/kyc', methods = ['POST'])
 def upload_files():
    if request.method == 'POST':
